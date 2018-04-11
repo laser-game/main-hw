@@ -1,0 +1,104 @@
+EESchema Schematic File Version 4
+LIBS:main-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 4550 3200 650  600 
+U 5AE842D7
+F0 "Main MCU" 50
+F1 "main_mcu.sch" 50
+$EndSheet
+$Comp
+L KLIB_RF_Module:HM-TRP-869S U?
+U 1 1 5AE89364
+P 9600 1850
+F 0 "U?" H 10041 1846 50  0000 L CNN
+F 1 "HM-TRP-869S" H 10041 1755 50  0000 L CNN
+F 2 "" H 9100 1800 60  0000 C CNN
+F 3 "https://www.rcscomponents.kiev.ua/datasheets/HM-TRP_433.pdf" V 10400 1900 50  0001 C CNN
+	1    9600 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Antenna AE?
+U 1 1 5AE8959C
+P 10150 1300
+F 0 "AE?" H 10230 1291 50  0000 L CNN
+F 1 "Antenna" H 10230 1200 50  0000 L CNN
+F 2 "" H 10150 1300 50  0001 C CNN
+F 3 "~" H 10150 1300 50  0001 C CNN
+	1    10150 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 1650 10150 1650
+Wire Wire Line
+	10150 1650 10150 1500
+$Comp
+L KLIB_Power:GND #PWR?
+U 1 1 5AE89647
+P 9700 2450
+F 0 "#PWR?" H 9700 2250 50  0001 C CNN
+F 1 "GND" H 9705 2277 50  0000 C CNN
+F 2 "" H 9700 2450 50  0001 C CNN
+F 3 "" H 9700 2450 50  0001 C CNN
+	1    9700 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L KLIB_Power:GND #PWR?
+U 1 1 5AE89669
+P 9500 2450
+F 0 "#PWR?" H 9500 2250 50  0001 C CNN
+F 1 "GND" H 9505 2277 50  0000 C CNN
+F 2 "" H 9500 2450 50  0001 C CNN
+F 3 "" H 9500 2450 50  0001 C CNN
+	1    9500 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L KLIB_Power:+3V3 #PWR?
+U 1 1 5AE8970C
+P 9600 1350
+F 0 "#PWR?" H 9600 1050 50  0001 C CNN
+F 1 "+3V3" H 9605 1523 50  0000 C CNN
+F 2 "" H 9600 1350 50  0001 C CNN
+F 3 "" H 9600 1350 50  0001 C CNN
+	1    9600 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 1650 8800 1650
+Wire Wire Line
+	9200 1750 8800 1750
+Wire Wire Line
+	9200 2050 8800 2050
+Wire Wire Line
+	9200 1950 8800 1950
+$Sheet
+S 6600 3800 1350 700 
+U 5AEA7A88
+F0 "Sound" 50
+F1 "sound.sch" 50
+F2 "SOUND_UART_TX" O L 6600 3900 50 
+F3 "SOUND_UART_RX" I L 6600 4000 50 
+F4 "SOUND_SEL0" I L 6600 4300 50 
+F5 "SOUND_SEL1" I L 6600 4400 50 
+F6 "SPEAKER_A+" O R 7950 3900 50 
+F7 "SPEAKER_A-" O R 7950 4000 50 
+F8 "SPEAKER_B+" O R 7950 4300 50 
+F9 "SPEAKER_B-" O R 7950 4400 50 
+$EndSheet
+$EndSCHEMATC
