@@ -1,0 +1,233 @@
+EESchema Schematic File Version 4
+LIBS:main-cache
+EELAYER 26 0
+EELAYER END
+$Descr User 8268 5827
+encoding utf-8
+Sheet 8 14
+Title "Back"
+Date "2018-03-13"
+Rev "1"
+Comp "wykys"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L KLIB_Power:GND #PWR048
+U 1 1 5AC04CAF
+P 3250 3200
+F 0 "#PWR048" H 3250 3000 50  0001 C CNN
+F 1 "GND" H 3255 3027 50  0000 C CNN
+F 2 "" H 3250 3200 50  0001 C CNN
+F 3 "" H 3250 3200 50  0001 C CNN
+	1    3250 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2450 3250 2450
+Wire Wire Line
+	3250 2450 3250 2550
+Text Label 4500 2450 2    50   ~ 0
+PWM_R
+Text Label 4500 2550 2    50   ~ 0
+PWM_G
+Text Label 4500 2650 2    50   ~ 0
+PWM_B
+Wire Wire Line
+	3550 2650 3250 2650
+Connection ~ 3250 2650
+Wire Wire Line
+	3250 2650 3250 2750
+Text Label 4500 2750 2    50   ~ 0
+SDA
+Wire Wire Line
+	3250 2850 3550 2850
+Text Label 4500 2850 2    50   ~ 0
+SCL
+Text Label 4500 2950 2    50   ~ 0
+~INT
+Text Label 4500 3050 2    50   ~ 0
+~AL
+Text Label 4500 3150 2    50   ~ 0
+IR_RX
+$Comp
+L KLIB_Power:+5V5 #PWR050
+U 1 1 5AC10061
+P 4650 1900
+F 0 "#PWR050" H 4650 1600 50  0001 C CNN
+F 1 "+5V5" H 4655 2073 50  0000 C CNN
+F 2 "" H 4650 1900 50  0001 C CNN
+F 3 "" H 4650 1900 50  0001 C CNN
+	1    4650 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L KLIB_Power:+5V5 #PWR049
+U 1 1 5AC101B6
+P 3400 1900
+F 0 "#PWR049" H 3400 1600 50  0001 C CNN
+F 1 "+5V5" H 3405 2073 50  0000 C CNN
+F 2 "" H 3400 1900 50  0001 C CNN
+F 3 "" H 3400 1900 50  0001 C CNN
+	1    3400 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2950 3550 2950
+Wire Wire Line
+	3250 3050 3550 3050
+Wire Wire Line
+	3550 3150 3250 3150
+Wire Wire Line
+	3250 2550 3550 2550
+Connection ~ 3250 2550
+Wire Wire Line
+	3250 2550 3250 2650
+Wire Wire Line
+	3250 2750 3550 2750
+Connection ~ 3250 2750
+Wire Wire Line
+	3250 2750 3250 2850
+Connection ~ 3250 2850
+Wire Wire Line
+	3250 2850 3250 2950
+Connection ~ 3250 2950
+Wire Wire Line
+	3250 2950 3250 3050
+Connection ~ 3250 3050
+Wire Wire Line
+	3250 3050 3250 3150
+Connection ~ 3250 3150
+Wire Wire Line
+	3250 3150 3250 3200
+Wire Wire Line
+	3550 2250 3400 2250
+Wire Wire Line
+	3550 2350 3250 2350
+$Comp
+L KLIB_Connector_IDC:IDC_02X13 J7
+U 1 1 5AC4FF09
+P 3850 2550
+F 0 "J7" H 3850 3392 50  0000 C CNN
+F 1 "IDC_02X13" H 3850 3301 50  0000 C CNN
+F 2 "Connectors:IDC_Header_Straight_26pins" V 4400 2550 50  0001 C CNN
+F 3 "~" V 4350 2550 50  0001 C CNN
+	1    3850 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2450 3250 2350
+Connection ~ 3250 2450
+$Comp
+L KLIB_Power:GND #PWR051
+U 1 1 5AC601B9
+P 4650 3200
+F 0 "#PWR051" H 4650 3000 50  0001 C CNN
+F 1 "GND" H 4655 3027 50  0000 C CNN
+F 2 "" H 4650 3200 50  0001 C CNN
+F 3 "" H 4650 3200 50  0001 C CNN
+	1    4650 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2350 4650 2350
+Wire Wire Line
+	3550 2050 3400 2050
+Connection ~ 3400 2050
+Wire Wire Line
+	3400 2050 3400 2150
+Wire Wire Line
+	3550 2150 3400 2150
+Connection ~ 3400 2150
+Wire Wire Line
+	3400 2150 3400 2250
+Wire Wire Line
+	4150 1950 4650 1950
+Wire Wire Line
+	4650 1950 4650 1900
+Wire Wire Line
+	4150 2050 4650 2050
+Wire Wire Line
+	4650 2050 4650 1950
+Connection ~ 4650 1950
+Wire Wire Line
+	4150 2150 4650 2150
+Wire Wire Line
+	4650 2150 4650 2050
+Connection ~ 4650 2050
+Wire Wire Line
+	4150 2250 4650 2250
+Wire Wire Line
+	4650 2250 4650 2150
+Connection ~ 4650 2150
+Wire Wire Line
+	3400 1900 3400 2050
+Wire Wire Line
+	3550 1950 3250 1950
+Wire Wire Line
+	3250 1950 3250 2350
+Connection ~ 3250 2350
+Text HLabel 4900 3150 2    50   Output ~ 0
+IR_RX
+Wire Wire Line
+	4650 3200 4650 2350
+Wire Wire Line
+	4150 3150 4900 3150
+Text HLabel 4900 3050 2    50   Output ~ 0
+~AL
+Text HLabel 4900 2950 2    50   Output ~ 0
+~INT
+Text HLabel 4900 2850 2    50   Input ~ 0
+SCL
+Text HLabel 4900 2750 2    50   BiDi ~ 0
+SDA
+Text HLabel 4900 2650 2    50   Input ~ 0
+LED_PWM_B
+Text HLabel 4900 2550 2    50   Input ~ 0
+LED_PWM_G
+Text HLabel 4900 2450 2    50   Input ~ 0
+LED_PWM_R
+Wire Wire Line
+	4150 2450 4900 2450
+Wire Wire Line
+	4150 2550 4900 2550
+Wire Wire Line
+	4150 2650 4900 2650
+Wire Wire Line
+	4150 2750 4900 2750
+Wire Wire Line
+	4150 2850 4900 2850
+Wire Wire Line
+	4150 2950 4900 2950
+Wire Wire Line
+	4150 3050 4900 3050
+$Comp
+L KLIB_Power:PWR_FLAG #FLG0101
+U 1 1 5AD86EB5
+P 2950 2350
+F 0 "#FLG0101" H 2950 2425 50  0001 C CNN
+F 1 "PWR_FLAG" V 2950 2478 50  0000 L CNN
+F 2 "" H 2950 2350 50  0001 C CNN
+F 3 "" H 2950 2350 50  0001 C CNN
+	1    2950 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L KLIB_Power:PWR_FLAG #FLG0102
+U 1 1 5AD86ECC
+P 2950 2250
+F 0 "#FLG0102" H 2950 2325 50  0001 C CNN
+F 1 "PWR_FLAG" V 2950 2378 50  0000 L CNN
+F 2 "" H 2950 2250 50  0001 C CNN
+F 3 "" H 2950 2250 50  0001 C CNN
+	1    2950 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2950 2250 3400 2250
+Connection ~ 3400 2250
+Wire Wire Line
+	2950 2350 3250 2350
+$EndSCHEMATC

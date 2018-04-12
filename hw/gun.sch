@@ -1,0 +1,118 @@
+EESchema Schematic File Version 4
+LIBS:main-cache
+EELAYER 26 0
+EELAYER END
+$Descr User 8268 5827
+encoding utf-8
+Sheet 10 14
+Title "Gun"
+Date "2018-03-31"
+Rev "1"
+Comp "wykys"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L KLIB_Connector_IDC:IDC_02X05 J9
+U 1 1 5ABFB7C4
+P 4000 2750
+F 0 "J9" H 4000 3192 50  0000 C CNN
+F 1 "IDC_02X05" H 4000 3101 50  0000 C CNN
+F 2 "Connectors:IDC_Header_Straight_10pins" V 4550 2750 50  0001 C CNN
+F 3 "~" V 4500 2750 50  0001 C CNN
+	1    4000 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2550 3650 2550
+Wire Wire Line
+	3650 2550 3650 2500
+Wire Wire Line
+	4300 2550 4350 2550
+Wire Wire Line
+	4350 2550 4350 2500
+Wire Wire Line
+	3700 2950 3650 2950
+Wire Wire Line
+	3650 2950 3650 3000
+Wire Wire Line
+	4300 2950 4350 2950
+Wire Wire Line
+	4350 2950 4350 3000
+$Comp
+L KLIB_Power:GND #PWR058
+U 1 1 5ABFBCA7
+P 3650 3000
+F 0 "#PWR058" H 3650 2800 50  0001 C CNN
+F 1 "GND" H 3655 2827 50  0000 C CNN
+F 2 "" H 3650 3000 50  0001 C CNN
+F 3 "" H 3650 3000 50  0001 C CNN
+	1    3650 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L KLIB_Power:GND #PWR060
+U 1 1 5ABFBCC1
+P 4350 3000
+F 0 "#PWR060" H 4350 2800 50  0001 C CNN
+F 1 "GND" H 4355 2827 50  0000 C CNN
+F 2 "" H 4350 3000 50  0001 C CNN
+F 3 "" H 4350 3000 50  0001 C CNN
+	1    4350 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L KLIB_Power:+5V5 #PWR057
+U 1 1 5ABFBDCC
+P 3650 2500
+F 0 "#PWR057" H 3650 2200 50  0001 C CNN
+F 1 "+5V5" H 3655 2673 50  0000 C CNN
+F 2 "" H 3650 2500 50  0001 C CNN
+F 3 "" H 3650 2500 50  0001 C CNN
+	1    3650 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L KLIB_Power:+5V5 #PWR059
+U 1 1 5ABFBDE6
+P 4350 2500
+F 0 "#PWR059" H 4350 2200 50  0001 C CNN
+F 1 "+5V5" H 4355 2673 50  0000 C CNN
+F 2 "" H 4350 2500 50  0001 C CNN
+F 3 "" H 4350 2500 50  0001 C CNN
+	1    4350 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2650 3300 2650
+Text Label 3300 2650 0    50   ~ 0
+IR_RX
+Wire Wire Line
+	3700 2750 3300 2750
+Wire Wire Line
+	3700 2850 3300 2850
+Text Label 3300 2750 0    50   ~ 0
+GUN_RX
+Text Label 3300 2850 0    50   ~ 0
+GUN_TX
+Text Label 4700 2650 2    50   ~ 0
+IR_RX
+Text Label 4700 2750 2    50   ~ 0
+GUN_RX
+Text Label 4700 2850 2    50   ~ 0
+GUN_TX
+Text HLabel 4800 2850 2    50   Output ~ 0
+GUN_UART_TX
+Text HLabel 4800 2750 2    50   Input ~ 0
+GUN_UART_RX
+Text HLabel 4800 2650 2    50   Output ~ 0
+IR_RX
+Wire Wire Line
+	4300 2650 4800 2650
+Wire Wire Line
+	4300 2750 4800 2750
+Wire Wire Line
+	4300 2850 4800 2850
+$EndSCHEMATC
