@@ -308,17 +308,6 @@ F 3 "~" H 9100 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C8
-U 1 1 5AD7FB38
-P 9550 1150
-F 0 "C8" H 9665 1196 50  0000 L CNN
-F 1 "100n" H 9665 1105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 9588 1000 50  0001 C CNN
-F 3 "~" H 9550 1150 50  0001 C CNN
-	1    9550 1150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C3
 U 1 1 5AD2636A
 P 7300 1150
@@ -338,12 +327,7 @@ Wire Wire Line
 Wire Wire Line
 	7300 1350 7750 1350
 Wire Wire Line
-	9550 1300 9550 1350
-Wire Wire Line
 	9100 1300 9100 1350
-Connection ~ 9100 1350
-Wire Wire Line
-	9100 1350 9550 1350
 Wire Wire Line
 	8650 1300 8650 1350
 Connection ~ 8650 1350
@@ -352,8 +336,6 @@ Wire Wire Line
 Wire Wire Line
 	8200 1300 8200 1350
 Connection ~ 8200 1350
-Wire Wire Line
-	8200 1350 8450 1350
 Wire Wire Line
 	7750 1300 7750 1350
 Connection ~ 7750 1350
@@ -368,19 +350,12 @@ Wire Wire Line
 	8200 1000 8200 950 
 Connection ~ 8200 950 
 Wire Wire Line
-	8200 950  8450 950 
-Wire Wire Line
 	8650 1000 8650 950 
 Connection ~ 8650 950 
 Wire Wire Line
 	8650 950  9100 950 
 Wire Wire Line
 	9100 1000 9100 950 
-Connection ~ 9100 950 
-Wire Wire Line
-	9100 950  9550 950 
-Wire Wire Line
-	9550 1000 9550 950 
 $Comp
 L KLIB_Power:+3V3 #PWR09
 U 1 1 5AD26399
@@ -403,16 +378,6 @@ F 3 "" H 8450 1400 50  0001 C CNN
 	1    8450 1400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8450 1400 8450 1350
-Connection ~ 8450 1350
-Wire Wire Line
-	8450 1350 8650 1350
-Wire Wire Line
-	8450 900  8450 950 
-Connection ~ 8450 950 
-Wire Wire Line
-	8450 950  8650 950 
 $Comp
 L KLIB_Power:PWR_FLAG #FLG01
 U 1 1 5AE70DE3
@@ -530,37 +495,37 @@ NoConn ~ 10150 2650
 Wire Wire Line
 	1550 5250 1300 5250
 Text HLabel 1300 5250 0    50   Input ~ 0
-A0
+A7
 Wire Wire Line
 	1550 5350 1300 5350
 Text HLabel 1300 5350 0    50   Input ~ 0
-A1
+A6
 Wire Wire Line
 	1550 3350 1300 3350
 Text HLabel 1300 3350 0    50   Input ~ 0
-A2
+A5
 Wire Wire Line
 	1550 3450 1300 3450
 Text HLabel 1300 3450 0    50   Input ~ 0
-A3
+A4
 NoConn ~ 1550 4250
 NoConn ~ 1550 4350
 Wire Wire Line
 	1550 3850 1300 3850
 Text HLabel 1300 3850 0    50   Input ~ 0
-A4
+A3
 Wire Wire Line
 	1550 3950 1300 3950
 Text HLabel 1300 3950 0    50   Input ~ 0
-A5
+A2
 Wire Wire Line
 	1550 4050 1300 4050
 Text HLabel 1300 4050 0    50   Input ~ 0
-A6
+A1
 Wire Wire Line
 	1550 4150 1300 4150
 Text HLabel 1300 4150 0    50   Input ~ 0
-A7
+A0
 $Comp
 L KLIB_Connector_Prog:UART_01X03 J1
 U 1 1 5AD4EEA4
@@ -597,4 +562,39 @@ Text HLabel 10400 2950 2    50   Input ~ 0
 IR_RX
 NoConn ~ 10150 4850
 NoConn ~ 10150 4950
+Wire Wire Line
+	8450 950  8650 950 
+Wire Wire Line
+	8200 950  8450 950 
+Connection ~ 8450 950 
+Wire Wire Line
+	8450 900  8450 950 
+Wire Wire Line
+	8450 1350 8650 1350
+Wire Wire Line
+	8200 1350 8450 1350
+Connection ~ 8450 1350
+Wire Wire Line
+	8450 1400 8450 1350
+Connection ~ 9100 1350
+Wire Wire Line
+	9100 1350 9550 1350
+Wire Wire Line
+	9550 1300 9550 1350
+Connection ~ 9100 950 
+Wire Wire Line
+	9100 950  9550 950 
+Wire Wire Line
+	9550 1000 9550 950 
+$Comp
+L Device:C C8
+U 1 1 5AD7FB38
+P 9550 1150
+F 0 "C8" H 9665 1196 50  0000 L CNN
+F 1 "100n" H 9665 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9588 1000 50  0001 C CNN
+F 3 "~" H 9550 1150 50  0001 C CNN
+	1    9550 1150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

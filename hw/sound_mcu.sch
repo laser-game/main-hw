@@ -313,17 +313,6 @@ F 3 "~" H 9100 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C25
-U 1 1 5AD26355
-P 9550 1150
-F 0 "C25" H 9665 1196 50  0000 L CNN
-F 1 "100n" H 9665 1105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 9588 1000 50  0001 C CNN
-F 3 "~" H 9550 1150 50  0001 C CNN
-	1    9550 1150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C20
 U 1 1 5AD7FB39
 P 7300 1150
@@ -343,12 +332,7 @@ Wire Wire Line
 Wire Wire Line
 	7300 1350 7750 1350
 Wire Wire Line
-	9550 1300 9550 1350
-Wire Wire Line
 	9100 1300 9100 1350
-Connection ~ 9100 1350
-Wire Wire Line
-	9100 1350 9550 1350
 Wire Wire Line
 	8650 1300 8650 1350
 Connection ~ 8650 1350
@@ -357,8 +341,6 @@ Wire Wire Line
 Wire Wire Line
 	8200 1300 8200 1350
 Connection ~ 8200 1350
-Wire Wire Line
-	8200 1350 8450 1350
 Wire Wire Line
 	7750 1300 7750 1350
 Connection ~ 7750 1350
@@ -373,19 +355,12 @@ Wire Wire Line
 	8200 1000 8200 950 
 Connection ~ 8200 950 
 Wire Wire Line
-	8200 950  8450 950 
-Wire Wire Line
 	8650 1000 8650 950 
 Connection ~ 8650 950 
 Wire Wire Line
 	8650 950  9100 950 
 Wire Wire Line
 	9100 1000 9100 950 
-Connection ~ 9100 950 
-Wire Wire Line
-	9100 950  9550 950 
-Wire Wire Line
-	9550 1000 9550 950 
 $Comp
 L KLIB_Power:+3V3 #PWR033
 U 1 1 5AD7FB3A
@@ -408,16 +383,6 @@ F 3 "" H 8450 1400 50  0001 C CNN
 	1    8450 1400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8450 1400 8450 1350
-Connection ~ 8450 1350
-Wire Wire Line
-	8450 1350 8650 1350
-Wire Wire Line
-	8450 900  8450 950 
-Connection ~ 8450 950 
-Wire Wire Line
-	8450 950  8650 950 
 $Comp
 L KLIB_Power:PWR_FLAG #FLG03
 U 1 1 5AD7FB3C
@@ -489,4 +454,39 @@ Wire Wire Line
 	10150 2750 10400 2750
 Text HLabel 10400 2750 2    50   Output ~ 0
 MUTE
+Wire Wire Line
+	8450 950  8650 950 
+Wire Wire Line
+	8200 950  8450 950 
+Connection ~ 8450 950 
+Wire Wire Line
+	8450 900  8450 950 
+Wire Wire Line
+	8450 1350 8650 1350
+Wire Wire Line
+	8200 1350 8450 1350
+Connection ~ 8450 1350
+Wire Wire Line
+	8450 1400 8450 1350
+Connection ~ 9100 950 
+Wire Wire Line
+	9100 950  9550 950 
+Wire Wire Line
+	9550 1000 9550 950 
+Connection ~ 9100 1350
+Wire Wire Line
+	9100 1350 9550 1350
+Wire Wire Line
+	9550 1300 9550 1350
+$Comp
+L Device:C C25
+U 1 1 5AD26355
+P 9550 1150
+F 0 "C25" H 9665 1196 50  0000 L CNN
+F 1 "100n" H 9665 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9588 1000 50  0001 C CNN
+F 3 "~" H 9550 1150 50  0001 C CNN
+	1    9550 1150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
