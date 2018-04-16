@@ -479,13 +479,13 @@ Wire Wire Line
 	10150 2250 10850 2250
 Wire Wire Line
 	10150 2750 10400 2750
-Text HLabel 10400 2750 2    50   Output ~ 0
+Text HLabel 10400 3850 2    50   Output ~ 0
 PWM_R
 Text HLabel 10400 2850 2    50   Output ~ 0
 PWM_G
 Wire Wire Line
 	10150 2850 10400 2850
-Text HLabel 10400 3850 2    50   Output ~ 0
+Text HLabel 10400 2750 2    50   Output ~ 0
 PWM_B
 Wire Wire Line
 	10400 3850 10150 3850

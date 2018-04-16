@@ -428,8 +428,6 @@ Wire Wire Line
 	1100 1750 1100 1700
 NoConn ~ 10150 4850
 NoConn ~ 10150 4950
-NoConn ~ 10150 3250
-NoConn ~ 10150 3350
 NoConn ~ 10150 3950
 NoConn ~ 10150 3850
 NoConn ~ 10150 2650
@@ -443,12 +441,12 @@ Wire Wire Line
 Text HLabel 10400 2550 2    50   Output ~ 0
 DAC
 Wire Wire Line
-	10150 2150 10400 2150
+	10150 3250 10400 3250
 Wire Wire Line
-	10150 2250 10400 2250
-Text HLabel 10400 2150 2    50   Input ~ 0
+	10150 3350 10400 3350
+Text HLabel 10400 3250 2    50   Input ~ 0
 SOUND_SEL0
-Text HLabel 10400 2250 2    50   Input ~ 0
+Text HLabel 10400 3350 2    50   Input ~ 0
 SOUND_SEL1
 Wire Wire Line
 	10150 2750 10400 2750
@@ -489,4 +487,6 @@ F 3 "~" H 9550 1150 50  0001 C CNN
 	1    9550 1150
 	1    0    0    -1  
 $EndComp
+NoConn ~ 10150 2150
+NoConn ~ 10150 2250
 $EndSCHEMATC
