@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_ST_STM32:STM32F405RGTx U7
+L MCU_ST_STM32:STM32F405RGTx U6
 U 1 1 5AD7FB27
 P 5850 3750
-F 0 "U7" H 1650 5850 50  0000 L CNN
+F 0 "U6" H 1650 5850 50  0000 L CNN
 F 1 "STM32F405RGTx" H 1650 5750 50  0000 L CNN
 F 2 "Package_QFP:TQFP-64_10x10mm_P0.5mm" H 10050 5625 50  0001 R TNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" H 5850 3750 50  0001 C CNN

@@ -20,7 +20,7 @@ U 1 1 5AD5A855
 P 5000 2750
 F 0 "J6" H 5000 3092 50  0000 C CNN
 F 1 "IDC_02X03" H 5000 3001 50  0000 C CNN
-F 2 "Connectors:IDC_Header_Straight_6pins" V 5550 2750 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical" V 5550 2750 50  0001 C CNN
 F 3 "~" V 5500 2750 50  0001 C CNN
 	1    5000 2750
 	1    0    0    -1  

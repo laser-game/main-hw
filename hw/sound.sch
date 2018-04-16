@@ -43,14 +43,14 @@ Wire Wire Line
 Wire Wire Line
 	1500 1550 2250 1550
 $Comp
-L KLIB_Audio:AD8542 U5
-U 1 1 5ACD4FF8
+L KLIB_Audio:AD8542 U3
+U 2 1 5ACD4FF8
 P 6550 1850
-F 0 "U5" H 6550 2285 50  0000 C CNN
+F 0 "U3" H 6550 2285 50  0000 C CNN
 F 1 "AD8542" H 6550 2194 50  0000 C CNN
 F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 6750 1650 50  0001 L CNN
 F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/AD8541_8542_8544.pdf" H 6700 2000 50  0001 C CNN
-	1    6550 1850
+	2    6550 1850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -138,14 +138,14 @@ Connection ~ 5450 1750
 Wire Wire Line
 	5450 1750 5400 1750
 $Comp
-L KLIB_Audio:AD8542 U3
-U 2 1 5ACD61E9
+L KLIB_Audio:AD8542 U5
+U 1 1 5ACD61E9
 P 8400 1950
-F 0 "U3" H 8400 2385 50  0000 C CNN
+F 0 "U5" H 8400 2385 50  0000 C CNN
 F 1 "AD8542" H 8400 2294 50  0000 C CNN
 F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 8600 1750 50  0001 L CNN
 F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/AD8541_8542_8544.pdf" H 8550 2100 50  0001 C CNN
-	2    8400 1950
+	1    8400 1950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -311,14 +311,14 @@ Wire Wire Line
 Wire Wire Line
 	8750 1950 9100 1950
 $Comp
-L KLIB_Audio:AD8542 U6
-U 1 1 5ACE046E
+L KLIB_Audio:AD8542 U5
+U 2 1 5ACE046E
 P 9400 2050
-F 0 "U6" H 9400 2485 50  0000 C CNN
+F 0 "U5" H 9400 2485 50  0000 C CNN
 F 1 "AD8542" H 9400 2394 50  0000 C CNN
 F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 9600 1850 50  0001 L CNN
 F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/AD8541_8542_8544.pdf" H 9550 2200 50  0001 C CNN
-	1    9400 2050
+	2    9400 2050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
