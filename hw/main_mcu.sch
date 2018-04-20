@@ -449,10 +449,6 @@ Text HLabel 1300 4650 0    50   Output ~ 0
 SOUND_SEL0
 Text HLabel 1300 4750 0    50   Output ~ 0
 SOUND_SEL1
-Text HLabel 1300 5050 0    50   Output ~ 0
-~LCD_RST
-Wire Wire Line
-	1550 5050 1300 5050
 Wire Wire Line
 	10150 4450 10400 4450
 Wire Wire Line
@@ -597,4 +593,5 @@ F 3 "~" H 9550 1150 50  0001 C CNN
 	1    9550 1150
 	1    0    0    -1  
 $EndComp
+NoConn ~ 1550 5050
 $EndSCHEMATC

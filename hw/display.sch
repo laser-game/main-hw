@@ -74,16 +74,10 @@ Text Label 5700 2750 2    50   ~ 0
 LCD_RX
 Text Label 4300 2750 0    50   ~ 0
 LCD_TX
-Text Label 5700 2650 2    50   ~ 0
-~RST
 Text HLabel 4200 2750 0    50   Output ~ 0
 LCD_UART_TX
 Text HLabel 5800 2750 2    50   Input ~ 0
 LCD_UART_RX
-Text HLabel 5800 2650 2    50   Input ~ 0
-~LCD_RST
-Wire Wire Line
-	5300 2650 5800 2650
 Wire Wire Line
 	5300 2750 5800 2750
 Wire Wire Line
@@ -147,4 +141,19 @@ Text HLabel 1750 2450 0    50   Output ~ 0
 ~BTN
 Wire Wire Line
 	1750 2450 2250 2450
+$Comp
+L KLIB_Power:+3V3 #PWR?
+U 1 1 5ADC0B6F
+P 5350 2600
+F 0 "#PWR?" H 5350 2300 50  0001 C CNN
+F 1 "+3V3" H 5355 2773 50  0000 C CNN
+F 2 "" H 5350 2600 50  0001 C CNN
+F 3 "" H 5350 2600 50  0001 C CNN
+	1    5350 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2650 5350 2650
+Wire Wire Line
+	5350 2650 5350 2600
 $EndSCHEMATC
